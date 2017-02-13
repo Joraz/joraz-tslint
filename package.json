@@ -1,0 +1,24 @@
+{
+  "name": "sigma-tslint",
+  "version": "0.0.1",
+  "description": "Additional custom tslint rules",
+  "main": "",
+  "scripts": {
+    "compile": "tsc -p .\\",
+    "test": "tslint -r .\\dist --test .\\test\\rules\\max-params\\default"
+  },
+  "keywords": [
+    "tslint",
+    "typescript"
+  ],
+  "author": "Daniel Young",
+  "license": "ISC",
+  "devDependencies": {
+    "tslint": "4.3.0",
+    "typescript": "2.1.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joraz/sigma-tslint"
+  }
+}
