@@ -1,0 +1,38 @@
+// These will pass even though they have > 3 parameters
+
+class Test
+{
+    constructor(one, two, three, four)
+    {
+
+    }
+
+    public doTheThing(one, two, three, four): string
+    {
+
+    }
+}
+
+function makeStuffHappen(one, two, three, four, five, six): string
+{
+
+}
+
+function makeStuffHappenWithTypes(one: string, two: number, three: Array<string>, four: number[], five: any): void
+{
+
+}
+
+var f = function(one, two, three, four, five) {
+
+}
+
+var f = (i, ii, iii, iv, v, vi, vii, viii, ix, x) =>
+{
+
+}
+
+interface IAwesomeness
+{
+    doIt(one, two, three, four): void;
+}

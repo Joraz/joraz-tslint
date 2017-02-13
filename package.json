@@ -4,8 +4,9 @@
   "description": "Additional custom tslint rules",
   "main": "",
   "scripts": {
-    "compile": "tsc -p .\\",
-    "test": "tslint -r .\\dist --test .\\test\\rules\\max-params\\default"
+    "compile": "./node_modules/.bin/tsc -p ./",
+    "pretest": "npm run compile",
+    "test": "./node_modules/.bin/tslint -r ./dist --test ./test/rules/**"
   },
   "keywords": [
     "tslint",
@@ -14,7 +15,7 @@
   "author": "Daniel Young",
   "license": "ISC",
   "devDependencies": {
-    "tslint": "4.3.0",
+    "tslint": "4.4.0",
     "typescript": "2.1.4"
   },
   "repository": {

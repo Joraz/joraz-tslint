@@ -1,0 +1,87 @@
+// Good examples
+
+class GoodTest
+{
+    constructor(one, two, three, private four)
+    {
+
+    }
+
+    public makeHappen(one, two, three, four)
+    {
+
+    }
+
+    private makeNot(): void
+    {
+
+    }
+
+    public static staticHappen(one)
+    {
+        return function(one, two, three, four)
+        {
+
+        }
+    }
+}
+
+var f = function(one, two, three, four) {
+
+}
+
+var f = (i, ii, iii, iv) =>
+{
+
+}
+
+interface IAwesomeness
+{
+    doIt(one, two, three, four): void;
+}
+
+// Bad examples
+
+class BadTest
+{
+    constructor(one, two, three, four, five)
+                                       ~~~~ [Number of parameters (5) exceeds the maximum allowed of 4.]
+    {
+
+    }
+
+    public doTheThing(one, two, three, four, five): string
+                                             ~~~~          [Number of parameters (5) exceeds the maximum allowed of 4.]
+    {
+
+    }
+}
+
+function makeStuffHappen(one, two, three, four, five, six): string
+                                                ~~~~~~~~~          [Number of parameters (6) exceeds the maximum allowed of 4.]
+{
+
+}
+
+function makeStuffHappenWithTypes(one: string, two: number, three: Array<string>, four: number[], five: any): void
+                                                                                                  ~~~~~~~~~        [Number of parameters (5) exceeds the maximum allowed of 4.]
+{
+
+}
+
+var f = function(one, two, three, four, five) {
+                                        ~~~~    [Number of parameters (5) exceeds the maximum allowed of 4.]
+
+}
+
+var f = (i, ii, iii, iv, v, vi, vii, viii, ix, x) =>
+                         ~~~~~~~~~~~~~~~~~~~~~~~     [Number of parameters (10) exceeds the maximum allowed of 4.]
+{
+
+}
+
+interface IAwesomeness
+{
+    doIt(one, two, three, four, five): void;
+                                ~~~~         [Number of parameters (5) exceeds the maximum allowed of 4.]
+}
