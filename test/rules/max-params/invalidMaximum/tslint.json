@@ -1,5 +1,7 @@
 {
     "rules": {
-        "max-params": [true, -5]
+        "max-params": {
+          "options": [-5]
+        }
     }
 }

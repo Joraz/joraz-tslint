@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "tslint:recommended"
+  ],
+  "rules": {
+    "one-line": [
+      false
+    ],
+    "max-line-length": [
+      false
+    ],
+    "trailing-comma": [
+      false
+    ],
+    "array-type": [
+      true,
+      "generic"
+    ]
+  }
+}

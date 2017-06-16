@@ -1,0 +1,33 @@
+{
+    "vsicons.presets.angular": false,
+    "gitlens.codeLens.enabled": false,
+    "files.exclude": {
+        "**/*.css": {
+            "when": "$(basename).less"
+        },
+        "**/*.d.ts": false,
+        "**/*.js": {
+            "when": "$(basename).ts"
+        },
+        "**/*.js.map": true,
+        "**/*.sln": true,
+        "**/*.suo": true,
+        "**/.idea": true,
+        "**/.tscache": true,
+        "**/.tslintrc": true,
+        "**/.typings/**": true,
+        "**/.vscode": true,
+        "**/angular/**": true,
+        "**/assets": true,
+        "**/coverage": true,
+        "**/dist": false,
+        "**/docs/**": false,
+        "**/embedded-dyn": false,
+        "**/embedded-sfdc": false,
+        "**/node_modules": true,
+        "**/sigma-cpq-lib": true,
+        "client-template/cpq-core/coverage": true,
+        "coverage": true,
+        "sigma-cpq-lib": true
+    }
+}

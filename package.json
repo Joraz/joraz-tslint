@@ -1,5 +1,5 @@
 {
-  "name": "sigma-tslint",
+  "name": "joraz-tslint",
   "version": "0.0.1",
   "description": "Additional custom tslint rules",
   "main": "",
@@ -15,8 +15,9 @@
   "author": "Daniel Young",
   "license": "ISC",
   "devDependencies": {
-    "tslint": "4.4.0",
-    "typescript": "2.1.4"
+    "@types/node": "*",
+    "tslint": "5.4.3",
+    "typescript": "2.3.4"
   },
   "repository": {
     "type": "git",

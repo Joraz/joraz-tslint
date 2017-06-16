@@ -5,11 +5,15 @@
         "target": "es5",
         "outDir": "dist",
         "noUnusedLocals": true,
-        "noUnusedParameters": true
+        "noUnusedParameters": true,
+        "lib": [
+          "es5",
+          "es6"
+        ]
     },
     "exclude": [
-        "dist",
-        "node_modules"
+        "dist/**",
+        "node_modules/**"
     ],
     "include": [
         "src/**/*.ts"
