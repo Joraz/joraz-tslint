@@ -21,6 +21,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Joraz/sigma-tslint"
+    "url": "git+https://github.com/Joraz/joraz-tslint"
   }
 }
